@@ -131,6 +131,17 @@
 	[self showConfirmPushRefSheet:ref remote:remoteRef];
 }
 
+#pragma mark Reset
+
+- (void) reset:(PBRefMenuItem *) sender {
+	PBGitCommit *commit = nil;
+	if ([[sender refish] refishType] == kGitXCommitType)
+		commit = (PBGitCommit *)[sender refish];
+	else
+		commit = [historyController.repository commitForRef:[sender refish]];
+	[historyController.repository.resetController resetToDestinationCommit:[commit realSha]];
+}
+
 
 #pragma mark Merge
 

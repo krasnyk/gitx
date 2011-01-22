@@ -9,6 +9,7 @@
 #import "PBGitResetController.h"
 #import "PBGitRepository.h"
 #import "PBCommand.h"
+#import "PBResetSheet.h"
 
 static NSString * const kCommandKey = @"command";
 
@@ -41,8 +42,20 @@ static NSString * const kCommandKey = @"command";
 						contextInfo:info];
 }
 
+- (void) resetToCommit:(NSString *) commit withType:(NSString *) resetType {
+	NSArray *arguments = [NSArray arrayWithObjects:@"reset", [NSString stringWithFormat:@"--%@", resetType], commit, nil];
+	PBCommand *cmd = [[PBCommand alloc] initWithDisplayName:@"Reset..." parameters:arguments repository:repository];
+	cmd.commandTitle = cmd.displayName;
+	cmd.commandDescription = @"Resetting repository";
+	[cmd invoke];
+}
+
 - (void) reset {
-	//TODO missing implementation
+	[self resetToDestinationCommit:nil];
+}
+
+- (void) resetToDestinationCommit:(NSString *) destinationCommit {
+	[PBResetSheet beginResetSheetForRepository:repository withCommitDestination:destinationCommit];
 }
 
 - (NSArray *) menuItems {
@@ -59,7 +72,7 @@ static NSString * const kCommandKey = @"command";
 	BOOL shouldBeEnabled = YES;
 	SEL action = [menuItem action];
 	if (action == @selector(reset)) {
-		shouldBeEnabled = NO;
+		shouldBeEnabled = YES;
 		//TODO missing implementation
 	}
 	return shouldBeEnabled;

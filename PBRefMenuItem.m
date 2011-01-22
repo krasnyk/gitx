@@ -179,6 +179,9 @@
 	NSString *rebaseTitle = isOnHeadBranch ? @"Rebase commit" : [NSString stringWithFormat:@"Rebase %@ on commit", headBranchName];
 	[items addObject:[PBRefMenuItem itemWithTitle:rebaseTitle action:@selector(rebaseHeadBranch:) enabled:!isOnHeadBranch]];
 
+	[items addObject:[PBRefMenuItem separatorItem]];
+	[items addObject:[PBRefMenuItem itemWithTitle:@"Reset..." action:@selector(reset:) enabled:YES]];
+	
 	for (PBRefMenuItem *item in items) {
 		[item setTarget:target];
 		[item setRefish:commit];

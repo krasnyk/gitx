@@ -17,8 +17,12 @@
 
 - (NSArray *) menuItems;
 
+// showing sheet
+- (void) resetToDestinationCommit:(NSString *) destinationCommit;
+- (void) reset;
 
 // actions
 - (void) resetHardToHead;
+- (void) resetToCommit:(NSString *) commit withType:(NSString *) resetType;
 
 @end
