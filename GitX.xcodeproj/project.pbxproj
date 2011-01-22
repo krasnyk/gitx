@@ -49,6 +49,12 @@
 		212A49AB12A31328009DAFAD /* deleted_file.png in Resources */ = {isa = PBXBuildFile; fileRef = 212A49A912A31328009DAFAD /* deleted_file.png */; };
 		212A49AD12A31350009DAFAD /* ignored_file.png in Resources */ = {isa = PBXBuildFile; fileRef = 212A49AC12A31350009DAFAD /* ignored_file.png */; };
 		212A49AF12A3135C009DAFAD /* modified_file.png in Resources */ = {isa = PBXBuildFile; fileRef = 212A49AE12A3135C009DAFAD /* modified_file.png */; };
+		213C598D12EB8BEB006F0CAE /* PBResetSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 213C598C12EB8BEB006F0CAE /* PBResetSheet.xib */; };
+		213C599012EB8BFC006F0CAE /* PBResetSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C598F12EB8BFC006F0CAE /* PBResetSheet.m */; };
+		213C5A6812EB8E95006F0CAE /* GTTopBlackGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C5A6712EB8E95006F0CAE /* GTTopBlackGradientView.m */; };
+		213C5A6B12EB8EC5006F0CAE /* GTGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C5A6A12EB8EC5006F0CAE /* GTGradientView.m */; };
+		213C5AC512EB91F5006F0CAE /* GTSheetWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C5AC112EB91F5006F0CAE /* GTSheetWindow.m */; };
+		213C5AC612EB91F5006F0CAE /* GTWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C5AC312EB91F5006F0CAE /* GTWindow.m */; };
 		217FF0B912A1CB3300785A65 /* PBStashController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217FF0B312A1CB3300785A65 /* PBStashController.m */; };
 		217FF0BA12A1CB3300785A65 /* PBSubmoduleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217FF0B512A1CB3300785A65 /* PBSubmoduleController.m */; };
 		217FF0BB12A1CB3300785A65 /* PBGitResetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217FF0B712A1CB3300785A65 /* PBGitResetController.m */; };
@@ -318,6 +324,17 @@
 		212A49A912A31328009DAFAD /* deleted_file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deleted_file.png; sourceTree = "<group>"; };
 		212A49AC12A31350009DAFAD /* ignored_file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ignored_file.png; sourceTree = "<group>"; };
 		212A49AE12A3135C009DAFAD /* modified_file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = modified_file.png; sourceTree = "<group>"; };
+		213C598C12EB8BEB006F0CAE /* PBResetSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PBResetSheet.xib; sourceTree = "<group>"; };
+		213C598E12EB8BFC006F0CAE /* PBResetSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBResetSheet.h; sourceTree = "<group>"; };
+		213C598F12EB8BFC006F0CAE /* PBResetSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBResetSheet.m; sourceTree = "<group>"; };
+		213C5A6612EB8E95006F0CAE /* GTTopBlackGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTTopBlackGradientView.h; sourceTree = "<group>"; };
+		213C5A6712EB8E95006F0CAE /* GTTopBlackGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTTopBlackGradientView.m; sourceTree = "<group>"; };
+		213C5A6912EB8EB3006F0CAE /* GTGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTGradientView.h; sourceTree = "<group>"; };
+		213C5A6A12EB8EC5006F0CAE /* GTGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTGradientView.m; sourceTree = "<group>"; };
+		213C5AC112EB91F5006F0CAE /* GTSheetWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSheetWindow.m; sourceTree = "<group>"; };
+		213C5AC212EB91F5006F0CAE /* GTWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTWindow.h; sourceTree = "<group>"; };
+		213C5AC312EB91F5006F0CAE /* GTWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTWindow.m; sourceTree = "<group>"; };
+		213C5AC412EB91F5006F0CAE /* GTSheetWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSheetWindow.h; sourceTree = "<group>"; };
 		217FF0B312A1CB3300785A65 /* PBStashController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBStashController.m; sourceTree = SOURCE_ROOT; };
 		217FF0B412A1CB3300785A65 /* PBStashController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBStashController.h; sourceTree = SOURCE_ROOT; };
 		217FF0B512A1CB3300785A65 /* PBSubmoduleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBSubmoduleController.m; sourceTree = "<group>"; };
@@ -701,6 +718,8 @@
 		21230ED41285ED760046E5A1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				213C5AC012EB91F5006F0CAE /* Window */,
+				213C5A5D12EB8E72006F0CAE /* Gradient */,
 				21230ED71285EDAF0046E5A1 /* PBArgumentPicker.h */,
 				21230ED81285EDAF0046E5A1 /* PBArgumentPicker.m */,
 				21CF0B22129C7ED90065B37C /* TrackableOutlineView.h */,
@@ -737,6 +756,28 @@
 				212A49AE12A3135C009DAFAD /* modified_file.png */,
 			);
 			path = "File Markers";
+			sourceTree = "<group>";
+		};
+		213C5A5D12EB8E72006F0CAE /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				213C5A6612EB8E95006F0CAE /* GTTopBlackGradientView.h */,
+				213C5A6712EB8E95006F0CAE /* GTTopBlackGradientView.m */,
+				213C5A6912EB8EB3006F0CAE /* GTGradientView.h */,
+				213C5A6A12EB8EC5006F0CAE /* GTGradientView.m */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
+		213C5AC012EB91F5006F0CAE /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				213C5AC412EB91F5006F0CAE /* GTSheetWindow.h */,
+				213C5AC112EB91F5006F0CAE /* GTSheetWindow.m */,
+				213C5AC212EB91F5006F0CAE /* GTWindow.h */,
+				213C5AC312EB91F5006F0CAE /* GTWindow.m */,
+			);
+			path = Window;
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* GitTest */ = {
@@ -828,6 +869,7 @@
 				21230ED11285EB5A0046E5A1 /* PBArgumentPicker.xib */,
 				F58DB55F10566E3900CFDF4A /* PBGitSidebarView.xib */,
 				D8022FE711E124A0003C21F6 /* PBGitXMessageSheet.xib */,
+				213C598C12EB8BEB006F0CAE /* PBResetSheet.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -918,6 +960,8 @@
 				D8083E02111FA33700337480 /* PBCloneRepositoryPanel.m */,
 				D8022FEB11E124C8003C21F6 /* PBGitXMessageSheet.h */,
 				D8022FEC11E124C8003C21F6 /* PBGitXMessageSheet.m */,
+				213C598E12EB8BFC006F0CAE /* PBResetSheet.h */,
+				213C598F12EB8BFC006F0CAE /* PBResetSheet.m */,
 			);
 			name = Sheets;
 			sourceTree = "<group>";
@@ -1415,6 +1459,7 @@
 				212A49AB12A31328009DAFAD /* deleted_file.png in Resources */,
 				212A49AD12A31350009DAFAD /* ignored_file.png in Resources */,
 				212A49AF12A3135C009DAFAD /* modified_file.png in Resources */,
+				213C598D12EB8BEB006F0CAE /* PBResetSheet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1584,6 +1629,11 @@
 				217FF0BA12A1CB3300785A65 /* PBSubmoduleController.m in Sources */,
 				217FF0BB12A1CB3300785A65 /* PBGitResetController.m in Sources */,
 				217FF0BE12A1CB3E00785A65 /* PBRevealWithFinderCommand.m in Sources */,
+				213C599012EB8BFC006F0CAE /* PBResetSheet.m in Sources */,
+				213C5A6812EB8E95006F0CAE /* GTTopBlackGradientView.m in Sources */,
+				213C5A6B12EB8EC5006F0CAE /* GTGradientView.m in Sources */,
+				213C5AC512EB91F5006F0CAE /* GTSheetWindow.m in Sources */,
+				213C5AC612EB91F5006F0CAE /* GTWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
