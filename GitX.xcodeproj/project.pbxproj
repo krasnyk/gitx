@@ -55,6 +55,7 @@
 		213C5A6B12EB8EC5006F0CAE /* GTGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C5A6A12EB8EC5006F0CAE /* GTGradientView.m */; };
 		213C5AC512EB91F5006F0CAE /* GTSheetWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C5AC112EB91F5006F0CAE /* GTSheetWindow.m */; };
 		213C5AC612EB91F5006F0CAE /* GTWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C5AC312EB91F5006F0CAE /* GTWindow.m */; };
+		213C5B7E12EBA779006F0CAE /* PBFileTree.xib in Resources */ = {isa = PBXBuildFile; fileRef = 213C5B7D12EBA779006F0CAE /* PBFileTree.xib */; };
 		217FF0B912A1CB3300785A65 /* PBStashController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217FF0B312A1CB3300785A65 /* PBStashController.m */; };
 		217FF0BA12A1CB3300785A65 /* PBSubmoduleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217FF0B512A1CB3300785A65 /* PBSubmoduleController.m */; };
 		217FF0BB12A1CB3300785A65 /* PBGitResetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217FF0B712A1CB3300785A65 /* PBGitResetController.m */; };
@@ -335,6 +336,7 @@
 		213C5AC212EB91F5006F0CAE /* GTWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTWindow.h; sourceTree = "<group>"; };
 		213C5AC312EB91F5006F0CAE /* GTWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTWindow.m; sourceTree = "<group>"; };
 		213C5AC412EB91F5006F0CAE /* GTSheetWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSheetWindow.h; sourceTree = "<group>"; };
+		213C5B7D12EBA779006F0CAE /* PBFileTree.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PBFileTree.xib; sourceTree = "<group>"; };
 		217FF0B312A1CB3300785A65 /* PBStashController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBStashController.m; sourceTree = SOURCE_ROOT; };
 		217FF0B412A1CB3300785A65 /* PBStashController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBStashController.h; sourceTree = SOURCE_ROOT; };
 		217FF0B512A1CB3300785A65 /* PBSubmoduleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBSubmoduleController.m; sourceTree = "<group>"; };
@@ -870,6 +872,7 @@
 				F58DB55F10566E3900CFDF4A /* PBGitSidebarView.xib */,
 				D8022FE711E124A0003C21F6 /* PBGitXMessageSheet.xib */,
 				213C598C12EB8BEB006F0CAE /* PBResetSheet.xib */,
+				213C5B7D12EBA779006F0CAE /* PBFileTree.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1460,6 +1463,7 @@
 				212A49AD12A31350009DAFAD /* ignored_file.png in Resources */,
 				212A49AF12A3135C009DAFAD /* modified_file.png in Resources */,
 				213C598D12EB8BEB006F0CAE /* PBResetSheet.xib in Resources */,
+				213C5B7E12EBA779006F0CAE /* PBFileTree.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

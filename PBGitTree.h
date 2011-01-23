@@ -21,6 +21,9 @@
 
 	NSString* localFileName;
 	NSDate* localMtime;
+
+	NSPredicate *filterPredicate;
+	NSMutableArray *filteredChildren;
 }
 
 + (PBGitTree*) rootForCommit: (id) commit;
@@ -38,6 +41,9 @@
 @property(assign) BOOL leaf;
 @property(retain) PBGitRepository* repository;
 @property(assign) __weak PBGitTree* parent;
+
+@property (nonatomic, copy) NSPredicate *filterPredicate;
+@property(readonly) NSArray *filteredChildren;
 
 @property(readonly) NSArray* children;
 @property(readonly) NSString* fullPath;
