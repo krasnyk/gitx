@@ -24,9 +24,9 @@ static NSString * const kCommandKey = @"command";
 
 - (void) resetHardToHead {
 	NSAlert *alert = [NSAlert alertWithMessageText:@"Reseting working copy and index"
-									 defaultButton:@"Cancel"
+									 defaultButton:@"Reset"
 								   alternateButton:nil
-									   otherButton:@"Reset"
+									   otherButton:@"Cancel"
 						 informativeTextWithFormat:@"Are you sure you want to reset your working copy and index? All changes to them will be gone!"];
 	
 	NSArray *arguments = [NSArray arrayWithObjects:@"reset", @"--hard", @"HEAD", nil];
@@ -90,7 +90,7 @@ static NSString * const kCommandKey = @"command";
 {
     [[sheet window] orderOut:nil];
 	
-	if (returnCode != NSAlertDefaultReturn) {
+	if (returnCode == NSAlertDefaultReturn) {
 		PBCommand *cmd = [(NSDictionary *)contextInfo objectForKey:kCommandKey];
 		[cmd invoke];
 	}
