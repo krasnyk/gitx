@@ -232,6 +232,7 @@
     if ([(NSString *)context isEqualToString: @"commitChange"]) {
 		[self updateKeys];
 		[self restoreFileBrowserSelection];
+		[self updateSearch:filesSearchField];
 		return;
 	}
 
