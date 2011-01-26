@@ -49,6 +49,8 @@
 		212A49AB12A31328009DAFAD /* deleted_file.png in Resources */ = {isa = PBXBuildFile; fileRef = 212A49A912A31328009DAFAD /* deleted_file.png */; };
 		212A49AD12A31350009DAFAD /* ignored_file.png in Resources */ = {isa = PBXBuildFile; fileRef = 212A49AC12A31350009DAFAD /* ignored_file.png */; };
 		212A49AF12A3135C009DAFAD /* modified_file.png in Resources */ = {isa = PBXBuildFile; fileRef = 212A49AE12A3135C009DAFAD /* modified_file.png */; };
+		2136978212F0CCDD0009C1C7 /* PBRevertSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2136978112F0CCDD0009C1C7 /* PBRevertSheet.xib */; };
+		2136978712F0CDDA0009C1C7 /* PBRevertSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2136978612F0CDDA0009C1C7 /* PBRevertSheet.m */; };
 		213C598D12EB8BEB006F0CAE /* PBResetSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 213C598C12EB8BEB006F0CAE /* PBResetSheet.xib */; };
 		213C599012EB8BFC006F0CAE /* PBResetSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C598F12EB8BFC006F0CAE /* PBResetSheet.m */; };
 		213C5A6812EB8E95006F0CAE /* GTTopBlackGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C5A6712EB8E95006F0CAE /* GTTopBlackGradientView.m */; };
@@ -325,6 +327,9 @@
 		212A49A912A31328009DAFAD /* deleted_file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deleted_file.png; sourceTree = "<group>"; };
 		212A49AC12A31350009DAFAD /* ignored_file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ignored_file.png; sourceTree = "<group>"; };
 		212A49AE12A3135C009DAFAD /* modified_file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = modified_file.png; sourceTree = "<group>"; };
+		2136978112F0CCDD0009C1C7 /* PBRevertSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PBRevertSheet.xib; sourceTree = "<group>"; };
+		2136978512F0CDDA0009C1C7 /* PBRevertSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBRevertSheet.h; sourceTree = "<group>"; };
+		2136978612F0CDDA0009C1C7 /* PBRevertSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBRevertSheet.m; sourceTree = "<group>"; };
 		213C598C12EB8BEB006F0CAE /* PBResetSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PBResetSheet.xib; sourceTree = "<group>"; };
 		213C598E12EB8BFC006F0CAE /* PBResetSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBResetSheet.h; sourceTree = "<group>"; };
 		213C598F12EB8BFC006F0CAE /* PBResetSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBResetSheet.m; sourceTree = "<group>"; };
@@ -872,6 +877,7 @@
 				F58DB55F10566E3900CFDF4A /* PBGitSidebarView.xib */,
 				D8022FE711E124A0003C21F6 /* PBGitXMessageSheet.xib */,
 				213C598C12EB8BEB006F0CAE /* PBResetSheet.xib */,
+				2136978112F0CCDD0009C1C7 /* PBRevertSheet.xib */,
 				213C5B7D12EBA779006F0CAE /* PBFileTree.xib */,
 			);
 			name = Resources;
@@ -965,6 +971,8 @@
 				D8022FEC11E124C8003C21F6 /* PBGitXMessageSheet.m */,
 				213C598E12EB8BFC006F0CAE /* PBResetSheet.h */,
 				213C598F12EB8BFC006F0CAE /* PBResetSheet.m */,
+				2136978512F0CDDA0009C1C7 /* PBRevertSheet.h */,
+				2136978612F0CDDA0009C1C7 /* PBRevertSheet.m */,
 			);
 			name = Sheets;
 			sourceTree = "<group>";
@@ -1464,6 +1472,7 @@
 				212A49AF12A3135C009DAFAD /* modified_file.png in Resources */,
 				213C598D12EB8BEB006F0CAE /* PBResetSheet.xib in Resources */,
 				213C5B7E12EBA779006F0CAE /* PBFileTree.xib in Resources */,
+				2136978212F0CCDD0009C1C7 /* PBRevertSheet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1638,6 +1647,7 @@
 				213C5A6B12EB8EC5006F0CAE /* GTGradientView.m in Sources */,
 				213C5AC512EB91F5006F0CAE /* GTSheetWindow.m in Sources */,
 				213C5AC612EB91F5006F0CAE /* GTWindow.m in Sources */,
+				2136978712F0CDDA0009C1C7 /* PBRevertSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

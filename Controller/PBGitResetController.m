@@ -9,7 +9,9 @@
 #import "PBGitResetController.h"
 #import "PBGitRepository.h"
 #import "PBCommand.h"
+
 #import "PBResetSheet.h"
+#import "PBRevertSheet.h"
 
 static NSString * const kCommandKey = @"command";
 
@@ -58,6 +60,27 @@ static NSString * const kCommandKey = @"command";
 	[PBResetSheet beginResetSheetForRepository:repository withCommitDestination:destinationCommit];
 }
 
+- (void) showRevertSheetWithPrefilledCommit:(NSString *) prefilledCommit {
+	[PBRevertSheet beginRevertSheetForRepository:repository withPrefilledCommit:prefilledCommit];
+}
+
+- (void) showRevertSheet {
+	[PBRevertSheet beginRevertSheetForRepository:repository withPrefilledCommit:nil];
+}
+
+- (void) revertCommit:(NSString *) commitToRevert noCommit:(BOOL) noCommitOn {
+	NSMutableArray *arguments = [NSMutableArray arrayWithObjects:@"revert", @"--no-edit", nil];
+	if (noCommitOn) {
+		[arguments addObject:@"-n"];
+	}
+	[arguments addObject:commitToRevert];
+	
+	PBCommand *cmd = [[PBCommand alloc] initWithDisplayName:@"Revert..." parameters:arguments repository:repository];
+	cmd.commandTitle = cmd.displayName;
+	cmd.commandDescription = @"Reverting repository";
+	[cmd invoke];
+}
+
 - (NSArray *) menuItems {
 	NSMenuItem *resetHeadHardly = [[NSMenuItem alloc] initWithTitle:@"Reset hard to HEAD" action:@selector(resetHardToHead) keyEquivalent:@""];
 	[resetHeadHardly setTarget:self];
@@ -65,7 +88,10 @@ static NSString * const kCommandKey = @"command";
 	NSMenuItem *reset = [[NSMenuItem alloc] initWithTitle:@"Reset..." action:@selector(reset) keyEquivalent:@""];
 	[reset setTarget:self];
 	
-	return [NSArray arrayWithObjects:resetHeadHardly, reset, nil];
+	NSMenuItem *revert = [[NSMenuItem alloc] initWithTitle:@"Revert..." action:@selector(showRevertSheet) keyEquivalent:@""];
+	[revert setTarget:self];
+	
+	return [NSArray arrayWithObjects:resetHeadHardly, reset, revert, nil];
 }
 
 - (BOOL) validateMenuItem:(NSMenuItem *)menuItem {

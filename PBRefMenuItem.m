@@ -182,6 +182,9 @@
 	[items addObject:[PBRefMenuItem separatorItem]];
 	[items addObject:[PBRefMenuItem itemWithTitle:@"Reset..." action:@selector(reset:) enabled:YES]];
 	
+	[items addObject:[PBRefMenuItem separatorItem]];
+	[items addObject:[PBRefMenuItem itemWithTitle:@"Revert..." action:@selector(revert:) enabled:YES]];
+	
 	for (PBRefMenuItem *item in items) {
 		[item setTarget:target];
 		[item setRefish:commit];

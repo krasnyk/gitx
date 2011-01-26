@@ -21,8 +21,13 @@
 - (void) resetToDestinationCommit:(NSString *) destinationCommit;
 - (void) reset;
 
+- (void) showRevertSheetWithPrefilledCommit:(NSString *) prefilledCommit;
+- (void) showRevertSheet;
+
 // actions
 - (void) resetHardToHead;
 - (void) resetToCommit:(NSString *) commit withType:(NSString *) resetType;
+
+- (void) revertCommit:(NSString *) commitToRevert noCommit:(BOOL) noCommitOn;
 
 @end
